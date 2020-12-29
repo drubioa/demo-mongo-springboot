@@ -1,6 +1,6 @@
 # Demo Spring Boot + MongoDb + Docker-Compose
 
-Lenguaje: [English](../README.md) | Español
+Language: English | [Español](docs/README.es-ES.md)
 
 # Starting 🚀
 In this demo we generate a project with spring boot, which have got a controller with 2 entpoints. The firts is for insert new register and the other to obtains inserted registries.

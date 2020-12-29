@@ -1,6 +1,6 @@
 # Demo Spring Boot + MongoDb + Docker-Compose
 
-Language: English | [Español](docs/README.es-ES.md)
+Lenguaje: [English](../README.md) | Español
 
 # Comenzando 🚀
 En esta prueba vamos a generar un proyecto con spring boot en el que haya un controlador con dos enpoints: uno para insertar nuevos registros y otro para recuperar estos registros.ç
