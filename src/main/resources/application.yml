@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://api_user:NdEep0XLpMNKUmgQVa81oDCx7mrSRodh0Z79qdX3@mongodb-host:27017/example

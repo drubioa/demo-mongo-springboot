@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "124a9a23-9f09-4eba-9eca-1bf413dc6267",
+		"name": "Demo Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get created person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/person/123456789A",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"person",
+						"123456789A"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Diego\",\r\n    \"surname\": \"AAA\",\r\n    \"nif\": \"123456789A\",\r\n    \"age\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/person",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
