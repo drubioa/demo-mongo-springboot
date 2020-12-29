@@ -1,44 +1,41 @@
 # Demo Spring Boot + MongoDb + Docker-Compose
 
-Language: English | [Español](docs/README.es-ES.md)
+Lenguaje: [English](../README.md) | Español
 
-# Comenzando 🚀
-En esta prueba vamos a generar un proyecto con spring boot en el que haya un controlador con dos enpoints: uno para insertar nuevos registros y otro para recuperar estos registros.ç
+# Starting 🚀
+In this demo we generate a project with spring boot, which have got a controller with 2 entpoints. The firts is for insert new register and the other to obtains inserted registries.
 
-Como ejemplo utilizaremos la entidad persona: 
+For this example, we using the entity *Person* with the following values:
 
-| Campo | tipo |
+| Field | type |
 | -- | -- |
 | name | string |
 | surname | string |
 | age | int |
 | nif | int |
 
-# Pre-requisitos 📋
-Disponer de docker y docker-compose.
+# Requirements 📋
+Yo should got installed *docker* and *docker-compose*.
 
-# Instalacion 🔧
-Para este proyecto hemos configurado nuestro *docker-compose.yml* para que genere dos conteneroes 
+# Instalation 🔧
+For this project we use *docker-compose.yml* to generate to containers. Use following command:
 
 ```
     docker-compose up -d
 ```
-
-Una vez lanzado tendremos levantados los siguientes contenedores:
-
+Once the application will be running, you should got the next containers:
 
 ````
     - mongo     # Con la base de datos
     - app       # Microservicio con spring boot y dos endpoints
 ```` 
 
-# Ejecutando la prueba de concepto ⚙️
-Para demostrar esta prueba de concepto se realizará en primer lugar una inseción en bd de datos mediante una llamada al *POST* 
-y luego se obtendrá mediante una llamada al *GET*.
+# Test demo ⚙️
+For this demo, we should be do two calls. One to insert new user in db with POST request and other to obtains inserted user with *GET* rquest.
 
-Dejo a continuación las llamadas que se pueden realizar con **curl** una vez la aplicación esta lanzada por el docker-compose.
+Use the followind *curl* calls to demostrate this test once the *docker-compose* was executing. 
 
-1. Para insertar nuevo registro
+1. To insert new user:
 ```
     curl --location --request POST 'localhost:8081/person' \
     --header 'Content-Type: application/json' \
@@ -50,8 +47,10 @@ Dejo a continuación las llamadas que se pueden realizar con **curl** una vez la
     }'
 ```
 
-2. Para recuperar el registro previamente creado
+2. For recovery inserted user.
 ```
     curl --location --request GET 'localhost:8081/person/123456789A'
 ```
 
+## Postman
+Is possible launch http request in postman. You find collection with test in **docs/Demo Mongo.postman_collection** file.
