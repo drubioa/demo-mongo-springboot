@@ -1,6 +1,8 @@
 # Demo Spring Boot + MongoDb + Docker-Compose
 
 ![Java CI with Maven](https://github.com/drubioa/demo-mongo-springboot/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Lenguaje: [English](../README.md) | Español
 
 # Comenzando 🚀
